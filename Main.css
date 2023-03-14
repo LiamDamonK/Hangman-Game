@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "PoiretOne";
+  src: url(PoiretOne-Regular.ttf) format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  font-family: PoiretOne;
+  background: linear-gradient(
+      135deg,
+      #708090 21px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        #708090 21px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: #708090;
+  background-size: 64px 128px;
+}
+
+#BodyElements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: PoiretOne;
+  font-size: large;
+  color: #1e2952;
+  font-weight: 700;
+}
+
+#Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Buttons button {
+  width: 50px;
+  height: 35px;
+  margin-right: 5px;
+  background-color: #e5eaf5;
+  color: #1e2952;
+}
+
+#Buttons button:hover {
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+#Letters {
+  /* Controls the DIV that the Placeholders are in */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1e2952;
+  width: 500px;
+  height: 50px;
+}
+
+#PlaceHolder0,
+#PlaceHolder1,
+#PlaceHolder2,
+#PlaceHolder3,
+#PlaceHolder4,
+#PlaceHolder5,
+#PlaceHolder6,
+#PlaceHolder7,
+#PlaceHolder8,
+#PlaceHolder9,
+#PlaceHolder10 {
+  float: left;
+  margin-right: 5px;
+  padding: 10px;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#Desciption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: wheat; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1e2952;
+  width: 800px;
+  height: 50px;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+#Hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5eaf5;
+  position: absolute;
+  top: 55.4%;
+  left: 38.2%;
+  transform: translate(-50%, -50%);
+  color: #1e2952;
+  width: 50px;
+  height: 50px;
+  font-size: large;
+  font-weight: 700;
+}
+/* Hangman */
+#HangmanContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 74%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  color: #1e2952;
+  width: 450px;
+  height: 450px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.Base {
+  background-color: black;
+  width: 450px;
+  height: 9px;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+#Lpill {
+  background-color: black;
+  width: 450px;
+  height: 9px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  visibility: hidden;
+}
+
+#Spill {
+  background-color: black;
+  width: 200px;
+  height: 9px;
+  display: flex;
+  position: absolute;
+  top: 1%;
+  left: 41.3%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+#Rope {
+  background-color: black;
+  width: 80px;
+  height: 9px;
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 53.5%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  visibility: hidden;
+}
+
+#Head {
+  height: 45px;
+  width: 45px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  top: 22%;
+  left: 62.5%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+#Neck {
+  width: 30px;
+  height: 7px;
+  display: flex;
+  position: absolute;
+  top: 28%;
+  left: 59%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  background-color: black;
+  visibility: hidden;
+}
+
+#Rarm {
+  width: 70px;
+  height: 7px;
+  display: flex;
+  position: absolute;
+  top: 31.8%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  transform: rotate(180deg);
+  background-color: black;
+  visibility: hidden;
+}
+#Larm {
+  width: 70px;
+  height: 7px;
+  display: flex;
+  position: absolute;
+  top: 32.6%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+  background-color: black;
+  visibility: hidden;
+}
+#Rleg {
+  width: 100px;
+  height: 7px;
+  display: flex;
+  position: absolute;
+  top: 41%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  transform: rotate(70deg);
+  background-color: black;
+  visibility: hidden;
+}
+#Lleg {
+  width: 100px;
+  height: 7px;
+  display: flex;
+  position: absolute;
+  top: 42%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  transform: rotate(110deg);
+  background-color: black;
+  visibility: hidden;
+}
+
+#Restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5eaf5;
+  position: absolute;
+  top: 55.4%;
+  left: 61.3%;
+  transform: translate(-50%, -50%);
+  color: #1e2952;
+  width: 70px;
+  height: 50px;
+  font-size: large;
+  font-weight: 700;
+  visibility: hidden;
+}
+
+#Lives {
+  color: #1e2952;
+  height: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 29.4%;
+  left: 49.9%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  font-weight: 700;
+}
